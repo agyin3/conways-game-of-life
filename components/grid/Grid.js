@@ -1,10 +1,16 @@
 import React, { useState, useCallback, useRef, Fragment } from "react";
 import produce from "immer";
+import { useSelector, useDispatch } from "react-redux";
+import { setRunning } from "../../actions";
 
 const numRows = 20;
 const numCols = 20;
 
 const Grid = () => {
+  const runningRef = useRef();
+  const dispatch= useDispatch()
+  const [running] = useSelector(state => state.running)
+  runningRef.current = running;
   const [grid, setGrid] = useState(() => {
     let newGrid = [];
     for (let i = 0; i < numRows; i++) {
@@ -12,15 +18,6 @@ const Grid = () => {
     }
     return newGrid;
   });
-
-  const [isRunning, setIsRunning] = useState(false);
-
-  // Setting up ref to isRunning state
-  // so we can utilize inside of the
-  // runSimulation callback
-
-  const runningRef = useRef();
-  runningRef.current = isRunning;
 
   // useCallback will only create the function once
   const runSimulation = useCallback(() => {
@@ -30,7 +27,6 @@ const Grid = () => {
 
     setGrid((g) => {
       return produce(g, (gridCopy) => {
-          console.log(g)
         for (let i = 0; i < numRows; i++) {
           for (let j = 0; j < numCols; j++) {
             // Step 1 - Finding Neighbors
@@ -118,14 +114,6 @@ const Grid = () => {
                 g[i][j];
             }
 
-            if(i===2 && j===4){
-                console.log('1', neighbors)
-            }else if(i===3 && j===4){
-                console.log('2',neighbors)
-            }else if(i===4 && j===4){
-                console.log('3',neighbors)
-            }
-
             // Step 2 - Updating Cells
 
             // Cell is alive(1)
@@ -153,8 +141,8 @@ const Grid = () => {
     <Fragment>
       <button
         onClick={() => {
-          setIsRunning(!isRunning);
-          if (!isRunning) {
+          dispatch(setRunning(!running));
+          if (!running) {
             runningRef.current = true;
             runSimulation();
           }
@@ -171,6 +159,7 @@ const Grid = () => {
         {grid.map((row, i) =>
           row.map((col, j) => (
             <div
+            key={`${i} - ${j}`}
               style={{
                 height: "20px",
                 width: "20px",
