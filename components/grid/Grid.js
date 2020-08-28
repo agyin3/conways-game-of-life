@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { clickCell } from "../../actions";
 import Buttons from "./buttons/Buttons";
+import GridHeader from "./header/GridHeader";
 
 const Grid = () => {
   const dispatch = useDispatch()
@@ -14,6 +15,7 @@ const Grid = () => {
 
   return (
     <Fragment>
+      <GridHeader />
       <div
         style={{
           display: "grid",
