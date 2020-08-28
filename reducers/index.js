@@ -18,7 +18,9 @@ export const gameReducer = produce((draft, { type, payload }) => {
             draft.running = payload
             break
         case types.SET_GRID:
-            draft.grid = payload
+            draft.running = false
+            draft.generation = 0
+            draft.grid = genNewArray(100, 100)
             break
         case types.SIM_GENERATION:
             let { grid, numRows, numCols } = payload
