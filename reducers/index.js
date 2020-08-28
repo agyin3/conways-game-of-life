@@ -1,6 +1,7 @@
 import * as types from '../types'
 import produce from 'immer'
 import genNewArray from '../utils/genNewArray'
+import { genX, genRandomShips, genTri, genTriInverted, genRect, genHourGlass } from '../utils/genPresets'
 import { simGeneration } from '../utils/simGeneration'
 
 export const initialState = {
