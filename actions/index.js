@@ -27,3 +27,9 @@ export const clickCell = (i, j) => {
         payload: {i, j}
     })
 }
+
+export const setRandom = () => (
+    {
+        type: types.SET_RANDOM_GRID
+    }
+)

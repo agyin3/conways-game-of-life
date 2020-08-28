@@ -29,6 +29,11 @@ export const gameReducer = produce((draft, { type, payload }) => {
             let {i, j} = payload
             draft.grid[i][j] = draft.grid[i][j] ? 0 : 1;
             break
+        
+            case types.SET_RANDOM_GRID:
+                draft.grid.forEach((row, i) => row.forEach((col, j) => (
+                    draft.grid[i][j] = Math.round(Math.random())
+                )))
 
     }
 }, initialState)
