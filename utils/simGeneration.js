@@ -97,6 +97,5 @@ export const simGeneration = (g, numRows, numCols) => {
           }
         }
       }
-      console.log('final', gridCopy)
       return gridCopy
 }
