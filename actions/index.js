@@ -33,3 +33,10 @@ export const setRandom = () => (
         type: types.SET_RANDOM_GRID
     }
 )
+
+export const setSpeed = (speed) => (
+    {
+        type: types.SET_SPEED,
+        payload: speed
+    }
+)
