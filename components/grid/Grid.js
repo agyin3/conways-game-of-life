@@ -30,7 +30,7 @@ const Grid = () => {
               style={{
                 height: "5px",
                 width: "5px",
-                background: grid[i][j] ? "pink" : undefined,
+                background: grid[i][j] ? "pink" : "#000",
               }}
               onClick={() => handleCellClick(i, j)}
             />
