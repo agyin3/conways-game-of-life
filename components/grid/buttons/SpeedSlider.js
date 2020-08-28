@@ -4,8 +4,6 @@ import { setSpeed } from '../../../actions'
 
 const SpeedSlider = () => {
     const dispatch = useDispatch()
-    const speed = useSelector(state => state.speed)
-    console.log(speed)
 
     return (
         <input
