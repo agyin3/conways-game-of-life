@@ -40,3 +40,38 @@ export const setSpeed = (speed) => (
         payload: speed
     }
 )
+
+export const setTri = (func) => (
+    {
+        type: types.SET_TRI,
+        payload: func
+    }
+)
+
+export const setTriInverted = (func) => (
+    {
+        type: types.SET_TRI_INVERTED,
+        payload: func
+    }
+)
+
+export const setX = (func) => (
+    {
+        type: types.SET_X,
+        payload: func
+    }
+)
+
+export const setHourglass = (func) => (
+    {
+        type: types.SET_HOURGLASS,
+        payload: func
+    }
+)
+
+export const setRect = (func) => (
+    {
+        type: types.SET_RECT,
+        payload: func
+    }
+)

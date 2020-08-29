@@ -4,13 +4,15 @@ import RandomButton from './RandomButton'
 import SpeedSlider from './SpeedSlider'
 import ResetButton from './ResetButton'
 
-const Buttons = () => (
-    <div>
+const Buttons = React.memo(() => (
+    <div 
+    className='buttons-group'
+    >
         <PlayButon />
         <ResetButton />
         <RandomButton />
         <SpeedSlider />
     </div>
-)
+))
 
 export default Buttons

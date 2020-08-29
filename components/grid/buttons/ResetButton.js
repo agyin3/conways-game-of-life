@@ -1,17 +1,19 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { setGrid } from '../../../actions'
+import { Fab } from '@rmwc/fab'
 
-const ResetButton = () => {
+const ResetButton = React.memo(() => {
     const dispatch = useDispatch()
     return (
-        <button 
-        type='button'
+        <Fab
+        mini 
+        icon='restore'
+        className='button'
+        theme={['secondaryBg', 'headline1']}
         onClick={() => dispatch(setGrid())}
-        >
-            Reset
-        </button>
+        />
     )
-}
+})
 
 export default ResetButton

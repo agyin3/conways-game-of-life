@@ -1,0 +1,140 @@
+#root {
+    min-height: 100vh;
+}
+
+/* Material Themes */
+
+.mdc-theme--primary,
+.mdc-theme--on-primary,
+.mdc-theme--on-surface {
+    color: var(--mdc-theme-primary)
+}
+
+.mdc-theme--primary-bg{
+    background-color: var(--mdc-theme-accent-blue)
+}
+
+.mdc-theme--secondary-bg {
+    background-color: var(--mdc-theme-accent-fuschia);
+}
+
+.mdc-theme--on-secondary,
+.mdc-theme--secondary {
+    color: var(--mdc-theme-secondary)
+}
+
+.mdc-theme--surface,
+.mdc-theme--background {
+    background-color: var(--mdc-theme-secondary);
+}
+
+
+/* Custom Styling */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+}
+
+div.mdc-top-app-bar__title {
+    font-size: var(--mdc-typography-headline1-font-size);
+    font-family: var(--mdc-typography-headline1-font-family);
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    /* border: 0.5em solid var(--mdc-theme-accent-blue); */
+    height: 25em;
+    width: 25em;
+    margin: 0 auto;
+}
+
+.grid-cell {
+    height: 0.25em;
+    width: 0.25em;
+}
+
+.grid-board {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 1% 0;
+    margin: 0 auto;
+}
+
+.buttons-group {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 15em;
+}
+
+.presets-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.preset-choice {
+    width: 14.4em;
+    height: 14.4em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1% auto;
+}
+
+/* Material Overrides */
+
+.mdc-top-app-bar__title {
+    padding: 0px;
+}
+
+@media (min-width: 800px){
+
+    .main-container {
+        flex-direction: row;
+    }
+
+    div.mdc-top-app-bar__title {
+        font-size: var(--mdc-typography-headline1-font-size-desktop);
+    }
+
+    .grid-container{
+        height: 50em;
+        width: 50em;
+    }
+
+    .grid-cell {
+        height: 0.5em;
+        width: 0.5em;
+    }
+
+    .grid-board {
+        width: 55em;
+        margin: 0;
+    }
+
+    .buttons-group {
+        min-height: fit-content;
+        padding: 3% 0;
+    }
+
+    .mdc-fab--mini {
+        width: 5em;
+        height: 5em;
+    }
+}
