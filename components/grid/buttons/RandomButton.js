@@ -1,17 +1,18 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { setRandom } from '../../../actions'
+import { Fab } from '@rmwc/fab'
 
-const RandomButton = () => {
+const RandomButton = React.memo(() => {
     const dispatch = useDispatch()
     return (
-        <button 
-        type='button'
+        <Fab
+        mini 
+        icon='shuffle'
+        theme={['secondaryBg']}
         onClick={() => dispatch(setRandom())}
-        >
-            Random
-        </button>
+        />
     )
-}
+})
 
 export default RandomButton
