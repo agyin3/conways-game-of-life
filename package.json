@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",    
+    "deploy": "gh-pages -d build",
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
@@ -18,13 +20,14 @@
   "bugs": {
     "url": "https://github.com/agyin3/conways-game-of-life/issues"
   },
-  "homepage": "https://github.com/agyin3/conways-game-of-life#readme",
+  "homepage": "https://agyin3.github.io/conways-game-of-life",
   "dependencies": {
     "@rmwc/fab": "^6.1.3",
     "@rmwc/grid": "^6.0.14",
     "@rmwc/select": "^6.1.3",
     "@rmwc/top-app-bar": "^6.1.3",
     "@rmwc/typography": "^6.1.3",
+    "gh-pages": "^3.1.0",
     "immer": "^7.0.8",
     "material-design-icons": "^3.0.1",
     "react": "^16.13.1",
