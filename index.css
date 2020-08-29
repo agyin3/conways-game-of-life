@@ -1,3 +1,23 @@
+:root {
+    --mdc-theme-primary: #e7dfdd;
+    --mdc-theme-secondary: #0e0816;
+    --mdc-theme-accent-blue: #4717f6;
+    --mdc-theme-accent-fuschia: #a239ca;
+
+    --mdc-typography-headline1-font-family:'Russo One', sans-serif;
+    --mdc-typography-headline1-font-size: 2.4em;
+    --mdc-typography-headline1-font-size-desktop: 3.6em;	
+
+    --mdc-typography-headline2-font-family:'Press Start 2P', cursive;
+    --mdc-typography-headline2-font-size: 1.6em;
+    
+}
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    margin: 0;
 }
