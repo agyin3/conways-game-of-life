@@ -1,4 +1,4 @@
-export const genX = (numRows, numCols) => {
+export const genX = (numRows=100, numCols=100) => {
     let newGrid = [];
     for (let i = 0; i < numRows; i++) {
         newGrid.push([])
@@ -13,7 +13,7 @@ export const genX = (numRows, numCols) => {
     return newGrid;
 }
 
-export const genRandomShips = (numRows, numCols) => {
+export const genRandomShips = (numRows=100, numCols=100) => {
     let newGrid = []
     let start = 0;
     for(let i=0; i < numRows; i++){
@@ -54,7 +54,7 @@ export const genRandomShips = (numRows, numCols) => {
 //     }
 // }
 
-export const genTri = (numRows, numCols) => {
+export const genTri = (numRows=100, numCols=100) => {
     let newGrid = []
     for(let i=0; i < numRows; i++){
         newGrid.push(Array.from(Array(numCols), () => 0))
@@ -69,7 +69,7 @@ export const genTri = (numRows, numCols) => {
     return newGrid
 }
 
-export const genTriInverted = (numRows, numCols) => {
+export const genTriInverted = (numRows=100, numCols=100) => {
     let newGrid = []
     for(let i=0; i < numRows; i++){
         newGrid.push(Array.from(Array(numCols), () => 0))
@@ -84,7 +84,7 @@ export const genTriInverted = (numRows, numCols) => {
     return newGrid
 }
 
-export const genRect = (numRows, numCols) => {
+export const genRect = (numRows=100, numCols=100) => {
     let newGrid = []
     for(let i=0; i < numRows; i++){
         newGrid.push(Array.from(Array(numCols), () => 0))
@@ -113,7 +113,7 @@ export const genRect = (numRows, numCols) => {
     return newGrid
 }
 
-export const genHourGlass = (numRows, numCols) => {
+export const genHourGlass = (numRows=100, numCols=100) => {
     let newGrid = []
     for(let i=0; i < numRows; i++){
         newGrid.push(Array.from(Array(numCols), () => 0))
