@@ -36,16 +36,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
-
-.header {
-    text-align: center;
+    background: var(--mdc-theme-accent-green);
 }
 
 div.mdc-top-app-bar__title {
     font-size: var(--mdc-typography-headline1-font-size);
     font-family: var(--mdc-typography-headline1-font-family);
     margin: 0 auto;
+    text-align: center;
 }
 
 .grid-container {
@@ -71,6 +69,7 @@ div.mdc-top-app-bar__title {
 
 .buttons-group {
     display: flex; 
+    flex-direction: column;
     align-items: center; 
     justify-content: space-around;
     align-content: space-around;
@@ -78,6 +77,14 @@ div.mdc-top-app-bar__title {
     width: 90%;
     margin: 0 auto;
     min-height: 15em;
+}
+
+.buttons-wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
 }
 
 .presets-container {
@@ -95,6 +102,33 @@ div.mdc-top-app-bar__title {
     background-repeat: no-repeat;
     background-size: contain;
     margin: 1% auto;
+    cursor: pointer;
+}
+
+/* Rules List */
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--mdc-theme-accent-blue);
+    color: var(--mdc-theme-primary);
+    padding: 1% 5%;
+}
+
+ul {
+    list-style-type: decimal;
+}
+
+li {
+    font-family: 'Audiowide', cursive;
+    font-size: 1.6em;
+    padding: 0.5em;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Material Overrides */
@@ -107,10 +141,16 @@ div.mdc-top-app-bar__title {
 
     .main-container {
         flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .header {
+        color: var(--mdc-theme-secondary);
     }
 
     div.mdc-top-app-bar__title {
         font-size: var(--mdc-typography-headline1-font-size-desktop);
+        color: var(--mdc-theme-primary);
     }
 
     .grid-container{
@@ -124,8 +164,23 @@ div.mdc-top-app-bar__title {
     }
 
     .grid-board {
-        width: 55em;
+        flex-direction: row;
         margin: 0;
+        width: 45%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .presets-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 60em;
+    }
+
+    .preset-choice {
+        height: 7.5em;
+        width: 7.5em;
+        margin: 1em 0;
     }
 
     .buttons-group {
@@ -136,5 +191,17 @@ div.mdc-top-app-bar__title {
     .mdc-fab--mini {
         width: 5em;
         height: 5em;
+    }
+
+    .rules {
+        justify-content: flex-start;
+        background: inherit;
+        color: var(--mdc-theme-secondary);
+        width: 40%;
+        padding: 1% 0%;
+    }
+
+    li {
+        width: 90%;
     }
 }
