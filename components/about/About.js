@@ -17,7 +17,7 @@ const Objectives = () => (
         </div>
         <div className='about-info'>
             <GenHeader text="Cellular Automata" use='headline3' />
-            <Typography use='body1'>Cellular Automaton(CA) is a discrete set of computational systems. CA can simulate the behavior of a set of cells over time based on a simple set of rules. The awesome thing about CA is often times very complex behavior will emerge from a simple set of rules.</Typography>
+            <Typography use='body1'>Cellular Automaton (CA) is a discrete set of computational systems. CA can simulate the behavior of a set of cells over time based on a simple set of rules. The awesome thing about CA is often times very complex behavior will emerge from a simple set of rules.</Typography>
         </div>
         <div className='about-info'>
             <GenHeader text="Turing Completeness" use='headline3' />
