@@ -3,13 +3,21 @@
     --mdc-theme-secondary: #0e0816;
     --mdc-theme-accent-blue: #4717f6;
     --mdc-theme-accent-fuschia: #a239ca;
+    --mdc-theme-accent-green: #2CA58D;
 
     --mdc-typography-headline1-font-family:'Russo One', sans-serif;
     --mdc-typography-headline1-font-size: 2.4em;
     --mdc-typography-headline1-font-size-desktop: 3.6em;	
 
     --mdc-typography-headline2-font-family:'Press Start 2P', cursive;
-    --mdc-typography-headline2-font-size: 1.6em;
+    --mdc-typography-headline2-font-size: 1.4em;
+
+    --mdc-typography-headline3-font-family:'Press Start 2P', cursive;
+    --mdc-typography-headline3-font-size: 1.4em;
+
+    --mdc-typography-body1-font-family:'Audiowide', cursive;
+    --mdc-typography-body1-font-size: 1.4em;
+
     
 }
 
