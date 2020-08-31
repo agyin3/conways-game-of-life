@@ -1,6 +1,7 @@
-# Conways Game Of Life
+# Conways Game Of Life 
+![license badge](https://img.shields.io/github/license/agyin3/conways-game-of-life) ![repo size badge](https://img.shields.io/github/repo-size/agyin3/conways-game-of-life?color=blueviolet) ![immer badge](https://img.shields.io/npm/v/immer?label=immer) ![react badge](https://img.shields.io/npm/v/react?label=react) ![redux badge](https://img.shields.io/npm/v/redux?label=redux) ![rmwc badge](https://img.shields.io/npm/v/rmwc?label=rmwc)
 
-My recreation of the popular zero player game, Conway's Game Of Life. Built with 😂 😭 😊 and reactjs with `rmwc` being my styling library of choice
+My recreation of the popular zero player game, Conway's Game Of Life. Built with 😂 😭 😊, `reactjs`, `immer`, `redux` and `rmwc` being my styling library of choice
 
 ## Table of Contents
 - [General Information](https://github.com/agyin3/conways-game-of-life#general-information)
