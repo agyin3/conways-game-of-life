@@ -3,6 +3,13 @@
 My recreation of the popular zero player game, Conway's Game Of Life. Built with 😂 😭 😊 and reactjs with `rmwc` being my styling library of choice
 
 ## Table of Contents
+- [General Information](https://github.com/agyin3/conways-game-of-life#general-information)
+- [Screenshots](https://github.com/agyin3/conways-game-of-life#screenshots)
+- [Technologies](https://github.com/agyin3/conways-game-of-life#technologies)
+- [Installation](https://github.com/agyin3/conways-game-of-life#installation)
+- [Features](https://github.com/agyin3/conways-game-of-life#features)
+- [Resources](https://github.com/agyin3/conways-game-of-life#resources)
+- [Contact](https://github.com/agyin3/conways-game-of-life#contact)
 
 ### General Information
 
@@ -49,7 +56,50 @@ for(let x=0; x<numOfRows; x++){
 
 For my version of the *Game Of Life* I made the decision of considering any cell off the grid to be dead and therefore represented by a `0`.
 
-#### Future Improvements
+### Screenshots
+
+![Macbook Pro mockup](./img/macbook-mock.png)
+![Iphone mockup, portait](./img/iphone-mock-portrait.png) 
+![Iphone mockup, landscape](./img/iphone-mock-landscape.png)
+
+### Technologies
+
+- Parcel Bundler
+- Babel
+- React
+- Immer
+- Redux
+- rmwc
+- Material Design
+
+
+### Installation
+
+Download the repo onto your local machine [here](https://github.com/agyin3/conways-game-of-life.git)<br>
+Run `npm i` to install all of the necessary dependencies<br>
+Run `npm run start` to start the local server<br>
+
+### Features
+
+#### Implemented
+
+**Cellular Automaton (CA)**
+
+Cellular Automaton (CA) is a discrete set of computational systems. CA can simulate the behavior of a set of cells over time based on a simple set of rules. The awesome thing about CA is often times very complex behavior will emerge from a simple set of rules.
+
+**Turing Completeness**
+
+Turing Completeness is the ability of a computing system to take in an arbirtary amount of data and make decisions based on a set of rules. In Conway's Game Of Life, this phenomenom is simulated by the user providing a grid of any size while the game infinitely simulates the next generation of life based on a simple set of rules.
+
+**Double Buffer**
+
+This project utilizes immer and redux to implement a double buffer. Simply put, the web application will display the current generation to the user while runnnig the algorithm in the background to produce the next state/generation. Once this process is complete, the next generation will then become the current state and the process will repeat.
+
+**Customizable**
+
+Users have the option of creating their own designs by clicking on individual cells to toggle it being alive/dead, easily generating a random game board with the push of a button, selecting from different preset game designs, and even selecting the speed at which each new generation is produced. 
+
+#### Future Features
 
 1. By utilizing a nested for loop the algorithm has an O(n^2) runtime which isn't ideal and will quickly slow down the runtime of the program as the size of the grid grows. Would like to explore utilizing different data structures and memoization to optimize the runtime
 
@@ -57,19 +107,15 @@ For my version of the *Game Of Life* I made the decision of considering any cell
 
 3. Adding feature to allow a user to adjust the size of the grid
 
-### Screenshots
 
-![Macbook Pro mockup](./img/macbook-mock.png)
-![Iphone mockup, portait](./img/iphone-mock-portrait.png) ![Iphone mockup, landscape](./img/iphone-mock-landscape.png)
+### Resources
 
+- [Conway's Game Of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+- [Cellular Automaton](https://en.wikipedia.org/wiki/Cellular_automaton)
+- [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness)
+- [rmwc styling library](https://rmwc.io/)
 
-## Installation
+### Contact
 
-Download the repo onto your local machine [here](https://github.com/agyin3/conways-game-of-life.git)<br>
-Run `npm i` to install all of the necessary dependencies<br>
-Run `npm start` to start the local server<br>
-
-
-
-### 
+Created by [Buddy Agyin](https://buddyagyin.com) - feel free to contact 
 
