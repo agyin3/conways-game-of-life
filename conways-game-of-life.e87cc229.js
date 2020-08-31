@@ -338,15 +338,15 @@ var e=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0}),export
 },{"react":"HdMw","react-redux":"sYSi","../../actions":"aiXV","./buttons/Buttons":"yfNX","./header/GridHeader":"yoLO"}],"TR1P":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("react")),r=require("react-redux");function t(e){return e&&e.__esModule?e:{default:e}}var u=e.default.memo(function(t){var u=t.img,a=t.func,o=t.dis,c=(0,r.useDispatch)();return e.default.createElement("span",{style:{backgroundImage:"url("+u+")"},className:"preset-choice",onClick:function(){return c(o(a)),void window.scrollTo(0,0)}})}),a=u;exports.default=a;
 },{"react":"HdMw","react-redux":"sYSi"}],"oMIT":[function(require,module,exports) {
-module.exports="dist/preset_hourglass.18451b2e.png";
+module.exports="preset_hourglass.18451b2e.png";
 },{}],"dq2A":[function(require,module,exports) {
-module.exports="dist/preset_pyramid.a1a50333.png";
+module.exports="preset_pyramid.a1a50333.png";
 },{}],"sfKs":[function(require,module,exports) {
-module.exports="dist/preset_pyramid_inverted.1bf94ef9.png";
+module.exports="preset_pyramid_inverted.1bf94ef9.png";
 },{}],"XnQN":[function(require,module,exports) {
-module.exports="dist/preset_rectangle.c8e4d3c3.png";
+module.exports="preset_rectangle.c8e4d3c3.png";
 },{}],"V8uF":[function(require,module,exports) {
-module.exports="dist/preset_x.8958b271.png";
+module.exports="preset_x.8958b271.png";
 },{}],"BsMn":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.genHourGlass=exports.genRect=exports.genTriInverted=exports.genTri=exports.genRandomShips=exports.genX=void 0;var r=function(){for(var r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:100,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:100,o=[],e=0;e<r;e++){o.push([]);for(var t=0;t<n;t++)t===e||t===n-1-e?o[e].push(1):o[e].push(0)}return o};exports.genX=r;var n=function(){for(var r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:100,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:100,o=[],e=0,t=0;t<r;t++){o.push(Array.from(Array(n),function(){return 0})),t%5==0&&(e=Math.floor(Math.random()*r-2));for(var a=0;a<r;a++)t%5==0&&t>r/2||t%5==2&&t<r/2?a===e&&(o[t][a]=1,o[t][a+1]=1,o[t][a+2]=1):t%5==1?a===e&&(o[t][a]=1):(t%5==0&&t<r/2||t%5==2&&t>r/2)&&a===e+1&&(o[t][a]=1)}return o};exports.genRandomShips=n;var o=function(){for(var r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:100,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:100,o=[],e=0;e<r;e++){o.push(Array.from(Array(n),function(){return 0}));for(var t=0;t<n;t++)e%2!=0&&(t>=e||t<=n-1-e)&&(o[e][t]=1)}return o};exports.genTri=o;var e=function(){for(var r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:100,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:100,o=[],e=0;e<r;e++){o.push(Array.from(Array(n),function(){return 0}));for(var t=0;t<n;t++)e%2!=0&&t>=e&&t<=n-1-e&&(o[e][t]=1)}return o};exports.genTriInverted=e;var t=function(){for(var r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:100,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:100,o=[],e=0;e<r;e++){o.push(Array.from(Array(n),function(){return 0}));for(var t=0;t<n;t++)e%2!=0&&e<r/2?t>=e&&t<=n-1-e&&(o[e][t]=1):e%2!=0&&e>r/2&&t<=e&&t>=n-1-e&&(o[e][t]=1),t%2!=0&&t<n/2?e>=t&&e<r-1-t&&(o[e][t]=1):t%2!=0&&t>n/2&&e<=t&&e>r-1-t&&(o[e][t]=1)}return o};exports.genRect=t;var a=function(){for(var r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:100,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:100,o=[],e=0;e<r;e++){o.push(Array.from(Array(n),function(){return 0}));for(var t=0;t<n;t++)e%2!=0&&e<r/2?t>=e&&t<=n-1-e&&(o[e][t]=1):e%2!=0&&e>r/2&&t<=e&&t>=n-1-e&&(o[e][t]=1)}return o};exports.genHourGlass=a;
 },{}],"JfUs":[function(require,module,exports) {
@@ -400,4 +400,4 @@ module.exports="dist/preset_x.8958b271.png";
 },{"@material/layout-grid/dist/mdc.layout-grid.css":"vKFU"}],"Focm":[function(require,module,exports) {
 "use strict";var e=a(require("react")),r=a(require("react-dom")),t=a(require("./App")),u=require("redux"),s=require("react-redux"),c=require("./reducers");function a(e){return e&&e.__esModule?e:{default:e}}require("./index.css"),require("@rmwc/typography/styles"),require("@rmwc/fab/styles"),require("@rmwc/select/styles"),require("@rmwc/top-app-bar/styles"),require("@rmwc/grid/styles"),require("./App.css");var i=(0,u.createStore)(c.gameReducer);r.default.render(e.default.createElement(s.Provider,{store:i},e.default.createElement(t.default,null)),document.getElementById("root"));
 },{"react":"HdMw","react-dom":"X9zx","./App":"lY9v","redux":"WZ36","react-redux":"sYSi","./reducers":"YCYF","./index.css":"vKFU","@rmwc/typography/styles":"lEMr","@rmwc/fab/styles":"dTxi","@rmwc/select/styles":"JGlp","@rmwc/top-app-bar/styles":"SaN8","@rmwc/grid/styles":"PKvn","./App.css":"vKFU"}]},{},["Focm"], null)
-//# sourceMappingURL=dist/conways-game-of-life.e87cc229.js.map
+//# sourceMappingURL=conways-game-of-life.e87cc229.js.map
