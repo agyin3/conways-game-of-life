@@ -1,11 +1,11 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { Typography } from '@rmwc/typography'
+import GenHeader from '../../header/GenHeader'
 
 const GridHeader = () => {
     const gen = useSelector(state => state.generation)
 
-    return <Typography use='headline2' className='header' theme={['onSecondary']}>Generation: {gen}</Typography>
+    return <GenHeader text={`Generation: ${gen}`} />
 }
 
 export default GridHeader
