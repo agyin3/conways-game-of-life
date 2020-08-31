@@ -52,6 +52,8 @@ export const gameReducer = produce((draft, { type, payload }) => {
         case types.SET_RECT:
         case types.SET_X:
             let newBoard = payload()
+            draft.running = false
+            draft.generation = 0
             draft.grid = newBoard
             break
 
