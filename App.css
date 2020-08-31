@@ -188,6 +188,10 @@ li {
         padding: 3% 0;
     }
 
+    .buttons-wrapper {
+        margin: 0 0 2em;
+    }
+
     .mdc-fab--mini {
         width: 5em;
         height: 5em;
