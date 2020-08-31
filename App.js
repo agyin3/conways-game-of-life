@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import MainHeader from './components/header/MainHeader'
 import Grid from './components/grid/Grid'
+import Rules from './components/rules/Rules'
 
 export default function App() {
     return(
@@ -8,7 +9,7 @@ export default function App() {
             <MainHeader />
             <div className='main-container'>
                 <Grid />
-                <div style={{flex: 1, background: 'red'}}>Hello</div>
+                <Rules />
             </div>
         </Fragment>
     )
