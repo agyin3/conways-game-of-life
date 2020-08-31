@@ -3,6 +3,8 @@
 
 My recreation of the popular zero player game, Conway's Game Of Life. Built with 😂 😭 😊, `reactjs`, `immer`, `redux` and `rmwc` being my styling library of choice
 
+**Deployed Site** - https://agyin3.github.io/conways-game-of-life/
+
 ## Table of Contents
 - [General Information](https://github.com/agyin3/conways-game-of-life#general-information)
 - [Screenshots](https://github.com/agyin3/conways-game-of-life#screenshots)
