@@ -9,7 +9,7 @@ export const initialState = {
     numCols: 100,
     grid: genNewArray(100, 100),
     generation: 0,
-    speed: 15.625
+    speed: 156.25
 }
 
 export const gameReducer = produce((draft, { type, payload }) => {
@@ -43,7 +43,7 @@ export const gameReducer = produce((draft, { type, payload }) => {
             break
         
         case types.SET_SPEED:
-            draft.speed = payload === 1 ? 15.625 : 15.625 * (2*payload)
+            draft.speed = payload === 1 ? 156.25 : 156.25 / (payload)
             break
         
         case types.SET_TRI:
