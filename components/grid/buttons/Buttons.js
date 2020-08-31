@@ -8,11 +8,17 @@ const Buttons = React.memo(() => (
     <div 
     className='buttons-group'
     >
-        <PlayButon />
-        <ResetButton />
-        <RandomButton />
+        <ButtonsWrapper />
         <SpeedSlider />
     </div>
 ))
+
+const ButtonsWrapper = () => (
+    <div className='buttons-wrapper'>
+        <PlayButon />
+        <ResetButton />
+        <RandomButton />
+    </div>
+)
 
 export default Buttons
